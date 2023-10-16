@@ -30,7 +30,6 @@ div{overflow: hidden;}
 	overflow: auto;
 	display: none;
 	min-height: 100vh;
-	transition: 0.3s ease-in-out;
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
