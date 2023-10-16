@@ -1,0 +1,446 @@
+@charset"UTF-8";
+*{margin: 0px;box-sizing: border-box;}
+html,body{height: 100%;}
+html{scroll-behavior: smooth;}
+body{
+	background-color: #fff;
+	font-family: "Verdana",sans-serif;
+}
+div{overflow: hidden;}
+.met{
+	padding: 30px;
+	color: #eee;
+	text-align: center;
+	display: inline-block;
+	background-color:rgba(94,104,51,0.9); 
+	border-radius: 0px 3vw 0px 3vw;
+}
+.met h1{font-size: 5vw;}
+.menu{
+	width: 200px;
+	float: right;
+	overflow: hidden;
+	padding-top: 0px;
+	padding-bottom: 10px;
+}
+.slidesome{
+	width: 100%;
+	height: auto;
+	padding: 3%;
+	overflow: auto;
+	display: none;
+	min-height: 100vh;
+	transition: 0.3s ease-in-out;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.menu a{
+	padding: 10px 30px;
+	display: inline-block;
+	color: rgb(237,225,201);
+	text-decoration: none;
+	font-size: 15px;
+	margin: 10px 0px;
+	width: 80%;
+	margin-left: 10%;
+	text-align: center;
+	border-radius: 0px 10px 0px 10px;
+	text-transform: uppercase;
+	background-color:rgb(94,104,51); 
+}
+.menu > a{opacity: 0.9;}
+.menu > a:hover,
+.menu > a:focus{opacity: 1;}
+#nav{display: none;overflow: hidden;}
+#nav a{
+	width: 100%;
+	display: block;
+	margin-left: 0px;
+	float: none;
+}
+#nav a:hover, #nav a:focus{
+	color: rgb(233,203,69);
+}
+.sect > div{overflow: hidden;}
+.slidecontainer{position: relative;}
+.sure{position: absolute;top: 3%;left: 3%;}
+.menu{position: absolute;top: 3%;right: 3%;}
+.one{background-image: url(../img/first.jpg);}
+.two{background-image: url(../img/fourth.jpg);}
+.three{background-image: url(../img/third.jpg);}
+.four{background-image: url(../img/photo-02.jpg);}
+.what{
+	max-width: 670px;
+	color: rgb(94,104,51); 
+	padding-top: 0px;
+	margin: 0px;
+	float: right;
+	direction: ltr;
+	animation: fade 7s;
+	margin-top:280px;	
+}
+.prof{float: left;margin:30px 0px;}
+.come{
+	width: auto;
+	max-width: 1000px;
+	margin: 0px auto;
+	float: none;
+	margin-top: 200px;
+	border:2px solid black;
+}
+.throw{
+	float: none;
+	margin: 0px auto;
+	margin-top: 190px;
+}
+.about h1{
+	padding: 20px 10px;	
+	text-align: center;
+	font-size: 28px;
+	text-transform: uppercase;
+	background-color: rgba(237,225,201,0.7);
+	border-left: 5px solid rgb(233,203,69);
+	border-right: 5px solid rgb(233,203,69);
+}
+.about > div{
+	padding: 30px;
+	border-bottom: 20px solid rgb(94,104,51); 
+	background-color:rgba(94,104,51,0.9); 
+}
+p{
+	font-size: 15px;
+	line-height: 25px;
+	margin-bottom: 15px;
+	color: rgb(237,225,201); 
+}
+.slideshow{
+	position: relative;
+	height: auto;
+}
+p.footer{
+	position: absolute;
+	bottom: 1%;
+	left: 3%;
+	color: rgb(94,104,51); 
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+.footer a{color: inherit;}
+.about p{text-align: justify;}
+.what a{
+	display: inline-block;
+	text-decoration: none;
+	display: inline-block;
+	padding: 15px 20px;
+	float: left;
+	margin: 30px 10px;
+	border-radius: 10px;
+	margin-bottom: 50px;
+	color: rgb(237,225,201); 
+	background-color: rgb(94,104,51); 
+	
+}
+.what .next{
+	color: rgb(94,104,51); 
+	font-weight: bold;
+	transition: 0.5s;
+	border:5px solid rgb(233,203,69);
+	background-color: rgba(237,225,201,1);
+	box-shadow: 0px 0px 30px 2px rgba(94,104,51,0.5);
+	
+}
+#defaultOpen{display: block;}
+.what a:hover{box-shadow: 0px 0px 30px 2px rgba(94,104,51,0.5);}
+
+/*My works*/
+.works{
+	padding: 20px;
+	margin: 100px auto;
+	margin-bottom: 10px;
+}
+.works img{
+	width: 100%;
+	height: 100%;
+}
+.slide{
+	display: none;
+	overflow: hidden; 
+	animation:2s easeIn;
+	margin-top: 200px;
+	}
+.slide:first-child{display: block;}
+.slide > div{
+	overflow: hidden;
+	padding: 10px 0px;
+	display: flex;
+	width: 100%;
+}
+.pro{
+	width: 32%;
+	float: left;
+	position: relative;
+	margin-top: 20px;
+	height: 100%;
+	border:1px solid rgba(94,104,51,0.5); 
+	border-radius: 10px;
+	overflow: hidden;   
+}
+.middle{
+	margin: 0px 2%;
+	margin-top: 20px;
+}
+.under{
+	position: absolute;
+	bottom: 5%;
+	left: 5%;
+	width: 90%;
+	background-color: white;
+	padding: 20px;
+	text-align: center;
+	border-radius: 10px;
+	opacity: 0;
+	color: rgba(94,104,51,1); 
+	height: 0;
+	transition: .5s ease;
+}
+.middle .under{
+	top: 5%; 
+	height:0;
+	transition: .5s ease;
+}
+.under h3{margin: 10px 0px;}
+.pro a{
+	text-decoration: none;
+	color: rgba(237,225,201,1);
+	display: inline-block;
+	margin: 5px auto;
+	padding:10px 20px;
+	background-color:rgba(94,104,51,1);
+	border-radius: 20px; 
+	transition: 0.5s;
+}
+.meat{
+	text-align: center;
+	margin-bottom: 50px;
+}
+.pro:hover .under{
+	opacity: 1;
+	height: 90%;
+}
+.middle:hover .under{ 
+	bottom: 0;
+	height: 90%;
+}
+.meat span{
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: rgba(237,225,201,1);
+	margin: 10px;
+	color: rgba(94,104,51,1);
+	box-shadow: 0 9px rgba(94,104,51,0.5);
+}
+.swing:hover{
+	cursor: pointer;
+	background-color: rgba(247,235,201,1);
+}
+.meat span:active {
+	background-color: rgba(255,245,201,1);;
+	box-shadow: 0 5px #666;
+	transform: translateY(5px);
+}
+.pro a span, .next span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+.pro a span:after, .next span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.pro a:hover span, .next:hover span {
+  padding-right: 15px;
+}
+.pro a:hover span:after, .next:hover span:after{
+  opacity: 1;
+  right: 0;
+}
+		
+/*My reputation*/
+.rep{
+	max-width: 1200px;
+	margin: 50px auto; 
+	display: flex;
+	overflow: hidden;
+	padding: 10px;
+	margin-top: 250px;
+}
+.rep > div{
+	width:50%;
+	float: left;
+	overflow: hidden;
+	display: flex;
+}
+.rep img{
+	width: 100%;
+	border-radius: 0px 0px 30px 30px;
+}
+.rep h2,.rep h4{
+	font-weight: lighter;
+	margin: 10px 0px;
+}
+.rep h2{margin-bottom: 0px;}
+.same{
+	width: 49%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	color: #333;
+	margin-top: 20px;
+	overflow: hidden; 
+	border-radius: 50px 50px 70px 70px;
+	background-color: rgba(237,225,201,1);
+}
+.same a{
+	margin:5px;
+	padding: 10px;
+	text-decoration: none;
+	display: inline-block;
+	color: rgba(247,235,201,1);
+	background-color: rgba(94,104,51,1);
+	border-radius: 7px 0px 7px 0px;
+}
+.left{margin-left: 2%;}
+.same p{
+	line-height: 25px;
+	text-align: center;
+	margin: 10px 0px;
+	padding: 5px 10px;
+	color:rgba(94,104,51,1); 
+}
+.same a:hover{
+	color:  rgba(247,255,201,1);
+	background-color: rgba(104,118,65,1);
+}
+/*contact section*/
+.set{margin-top: 200px;}
+.set > div{
+	overflow: hidden;
+	padding: 0px;
+}
+.shop{
+	width: 30%;
+	float: left;
+}
+.half{
+	width: 68%;
+	margin-left: 2%; 
+	float: left;
+}
+img{width: 100%;}
+.shop > div{
+	text-align: center;
+	box-shadow: 0px 0px 5px 10px rgba(237,225,201,1);
+}
+.shop a{
+	text-decoration: none;
+	color: rgba(104,118,65,1);
+	font-size: 30px;
+	display: inline-block;
+	margin: 5px;
+	transition: 1s ease;
+	padding: 0px 10px;
+}
+.shop a:hover{
+	color: rgba(237,225,201,1);
+	background-color: rgba(94,104,51,1);
+}
+.shop  .wow{
+	background-color: rgba(237,225,201,1);
+	padding:20px 10px;
+	border-bottom: 5px outset rgba(94,104,51,0.3);
+	border-left: 5px inset rgba(94,104,51,0.3);
+}
+.half p{
+	width: 50%;
+	float: left;
+	margin: 20px 0px;
+	color: rgba(237,225,201,1);
+}
+.half p:last-child{
+	width: 100%;
+	text-align: center;
+	float: none;
+}
+.half a{
+	text-decoration: none; 
+	color: inherit;
+}
+.half a:hover{text-decoration: overline;}
+.half .fa{
+	color: rgba(94,104,51,1);
+	font-size: 20px;
+	transition: 0.3s ease;
+}
+.half form{
+	text-align: center;
+margin-bottom: 50px;
+}
+input:not(:last-child),textarea{
+	padding: 10px;
+	color:#333;  
+	outline: none;
+	font-size: 19px; 
+	width: 100%;
+	display: block;
+	margin: 30px 0px;
+	border:10px outset rgba(237,225,201,1);
+	background-color:  rgba(237,225,201,1);
+}
+textarea{height: 200px;resize: none;}
+input.won{width: 49%;float: left;}
+input.par{margin-left: 2%;}
+input:last-child{
+	border:none;
+	margin: 10px;
+	padding: 10px 20px;
+	cursor: pointer; 
+	color: rgba(94,104,51,1);
+	background-color: rgba(237,225,201,1);
+	box-shadow: 0 9px rgba(94,104,51,0.5);
+}
+input:last-child:active {
+  background-color: rgba(255,245,201,1);;
+  box-shadow: 0 5px #666;
+  transform: translateY(5px);
+}
+.pro a span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+
+}
+@keyframes easeIn{
+	from{opacity: 0.3;}
+	to{opacity: 1;}
+}
+@-webkit-keyframes easeIn{
+	from{opacity: 0.3;}
+	to{opacity: 1;}
+}
+@keyframes fade{
+	from{opacity: 0.7;}
+	to{opacity: 1;}
+}
+
+@-webkit-keyframes fade{
+	from{opacity: 0.7;}
+	to{opacity: 1;}
+}

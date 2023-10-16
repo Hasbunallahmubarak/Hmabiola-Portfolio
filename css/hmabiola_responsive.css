@@ -1,0 +1,43 @@
+@media screen and (max-width: 850px){
+	.met h1{font-size: 7vw;}
+	.pro{width: 49%;margin-left: 2%;}
+	.pro:first-child{margin-left: 0px;}
+	.middle{display: none;}
+	.rep{display: block;}
+	.same{border-radius:50px; }
+	.same p{padding: 5px 20px;}
+	.rep > div{width: 100%;}
+	.know{margin-left: 0px;}
+}
+@media screen and (max-width: 670px){
+	.menu{margin-top: 180px;}
+	.set{padding: 20px 10px;margin-top: 300px;}
+	.rep,.set,.what{margin-top: 480px;}
+	.prof{margin-top: 30px;}
+	.works{margin-top: 250px;padding: 10px 0px;}	
+	.what a{margin-bottom: 10px;}
+	.what a:last-child{margin-left: 10px;margin-bottom: 90px;}
+	.half,.shop{width: 100%;}
+	.half{margin-left: 0px;}
+}
+@media screen and (max-width: 600px){
+	.met h1{font-size: 9.5vw;}
+	.menu a{font-size: 13px;}
+	.slide > div{display: block;}
+	.what a{font-size: 15px;}
+	.rep > div{display: block;overflow: hidden;padding: 20px 0px;}
+	.same{width: 100%;float: none;margin-top: 30px;}
+	.left{margin-left: 0px;}
+	input:not(:last-child),textarea{
+		border:5px outset rgba(237,225,201,1);
+	}.meat{margin-bottom: 90px;}
+	.slide:first-child{display: block;}
+	.pro{width: 100%; margin-left: 0px;}
+	.meat span{font-size: 12px;}
+}
+@media screen and (max-width: 350px){
+	.what a:last-child{margin-left: 0px;}
+	.under h3{font-size: 4vw;}
+	.pro a{font-size: 3vw;}
+	.meat span{font-size: 10px;}
+}
