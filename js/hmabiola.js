@@ -44,10 +44,8 @@ function openN() {
 	}
 }
 function closeI() {
-	document.getElementById('Resume').style.display = "none";
 	document.getElementById('overlay').style.display = "none";
 }
 function openI() {
-	document.getElementById('Resume').style.display = "block";
-	document.getElementById('overlay').style.display = "block";
+	document.getElementById('overlay').style.display = "flex";
 }
