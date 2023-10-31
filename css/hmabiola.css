@@ -370,6 +370,7 @@ p.footer{
 	font-size: 16px;
 	letter-spacing: 2px;
 	padding: 10px 20px;
+	border-radius: 5px;
 	background-color: rgba(94,104,51,1);
 }
 hr{border:1px solid rgba(237,225,201,1);}
