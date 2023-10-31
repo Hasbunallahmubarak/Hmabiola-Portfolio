@@ -34,6 +34,7 @@
 	.slide:first-child{display: block;}
 	.pro{width: 100%; margin-left: 0px;}
 	.meat span{font-size: 12px;}
+	#overlay button{font-size: 12px;}
 }
 @media screen and (max-width: 350px){
 	.what a:last-child{margin-left: 0px;}
